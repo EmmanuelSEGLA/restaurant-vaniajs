@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+    background-color: rgba(48, 46, 46, 0.678);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+
+    min-height: 100vh;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+
+  }
+  
+  .menu__container {
+    /*  background-color: #bc1e51; */
+    width: 16%;
+    height: 98vh;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 1vh;
+  }
+  .page__content {
+    /* background-color: green; */
+    width: 80%;
+    height: 300vh;
+    margin-left: 20%;
+  }
+  
+  .logo__container {
+    background-image: url(../Assets/img/logo-Restaurant.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 28vh;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+  }
+  .logo__container img{
+    width: 80%;
+    height: 80%;
+    margin: 5%;
+    
+  }
+
+  .menu__navigation {
+    /*   background-color: yellow; */
+    width: 100%;
+    height: 70vh;
+    padding: 0;
+    margin: 0;
+    color: aqua;
+  }
+  menu {
+    margin: 0;
+    padding: 0;
+    min-height: 95%;
+  }
+
+
+  .menu__navigation ul {
+   
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+  
+    list-style-type: none;
+    color: rgb(0, 0, 0);
+  }
+  .menu__link {
+ 
+
+    display: flex;
+    cursor: pointer;
+    font-weight: bolder;
+    padding: 0.5rem 0rem 0.5rem 1rem;
+    background-color: rgba(241, 241, 241, 0.801);
+    cursor: pointer;
+    position: relative;
+    border-radius: 0 50px 50px 0;
+    z-index: 5;
+    transition: all .4s;
+    margin-top: 1vh;
+  }
+
+  .menu__link::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2%;
+    height: 100%;
+    background-color: orange;
+    transition: all .4s;
+  }
+  .menu__link:hover::before{
+    width: 100%;
+    background-image: linear-gradient(115deg, #dfbd16 10%, #ffa751 100%);
+    color: white;
+    z-index: -1;
+    border-radius: 0 25px 25px 0;
+    transition: all .4s;
+    
+  }
+  .menu__link:hover {
+    background-color: #fdf5e0;
+    border-radius: 0 50px 50px 0;
+ color: white;
+ transform: translateX(12%);
+ 
+  }
+  .menu__link__active{
+    background-color: #fdf5e0;
+    border-radius: 0 50px 50px 0;
+ color: white;
+ transform: translateX(12%);
+
+ width: 100%;
+ background-image: linear-gradient(115deg, #dfbd16 10%, #ffa751 100%);
+ color: white;
+ z-index: -1;
+ border-radius: 0 25px 25px 0;
+ transition: all .4s;
+ 
+  }
+  .menu__navigation a {
+    display: block;
+    color: inherit;
+    font-size: 1.3rem;
+    text-decoration: none;
+  }
+  /* .menu__navigation a:hover {
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+    color: rebeccapurple;
+  } */
+
+
+/*  ul li {
+    font-size: 1.2rem;
+    background-color: rgb(23,23,23,23);
+    margin: 10px 0;
+    padding: 20px 30px;
+    cursor: pointer;
+    position: relative;
+} */ 
+
+/* ----------------------------------------------------------------------- */
+
+
+
+
+
+
+header {
+    width: 98%;
+    height: 10vh;
+    background-image: linear-gradient(115deg, #cccabe38 10%, #eeb175e5 100%);
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px white;
+    margin-top: 1vh;
+    margin-right: 1vh;
+    display: flex;
+    
+    
+  }
+  .header__left{
+    width: 50%;
+    height: 100%;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 0 20px;
+  }
+
+  .header__right{
+    background-image: url(../Assets/img/oiui.png);
+    background-repeat: repeat;
+    background-size: cover;
+
+    z-index: -1;
+    width: 50%;
+    height: 100%;
+  }
+.content{
+    width: 98%;
+    min-height: 80vh;
+    background-color: rgba(99, 96, 96, 0.555);
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.473);
+    margin-top: 1vh;
+    margin-right: 1vh;
+    display: flex;
+    flex-direction: column;
+    
+    
+
+
+}
+
+
