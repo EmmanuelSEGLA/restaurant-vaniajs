@@ -215,7 +215,7 @@ header {
 .content{
     width: 98%;
     min-height: 80vh;
-    background-image: linear-gradient(135deg, #838a9150 10%, #6b6b6b 100%);
+    background-image: linear-gradient(135deg, #838a9150 10%, #6b6b6b59 100%);
     
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
