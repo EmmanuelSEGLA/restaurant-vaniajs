@@ -1,12 +1,12 @@
 function enableTest(i){
 
-    suggestForm.hidden = !suggestForm.hidden
+    complaintForm.hidden = !complaintForm.hidden
 
     if (i === 1) {
       
         btnPincipal.innerHTML=""
         btnOn = document.createElement('button')
-        btnOn.textContent = 'cliquer pour entrer une Suggestion'
+        btnOn.textContent = 'cliquer pour entrer une plainte'
         btnOn.classList = 'btnOn'
         
         btnPincipal.appendChild(btnOn)
@@ -39,9 +39,9 @@ function enableTest(i){
 
 }
 
-let suggestion = []
-let btnFormSug = document.getElementById('btnFormSug')
-let suggestForm = document.getElementById('suggestForm')
+
+let btnFormComplaint = document.getElementById('btnFormComplaint')
+let complaintForm = document.getElementById('complaintForm')
 let btnPincipal = document.getElementById('btnPincipal')
 let user = document.getElementById('user')
 let userComment = document.getElementById('userComment')
@@ -49,7 +49,7 @@ let userComment = document.getElementById('userComment')
 let mode = 1
 let btnMode
 
-btnFormSug.addEventListener('click', (e)=>{
+btnFormComplaint.addEventListener('click', (e)=>{
     mode++
     btnMode = mode%2
    enableTest(btnMode)
@@ -57,15 +57,10 @@ btnFormSug.addEventListener('click', (e)=>{
 })
 
 
-suggestForm.addEventListener('submit', (e)=>{
+complaintForm.addEventListener('submit', (e)=>{
     e.preventDefault()
 
-    suggestion.push(
-        {
-            identity: user.value,
-            comment: userComment.value,
-        }
-    )
+
 
     console.log(suggestion);
 })

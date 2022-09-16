@@ -1,13 +1,13 @@
-.suggestion__form{
+.complaint__form{
     width: 40%;
     height: fit-content;
     margin: auto;
     text-align: center;
 }
-.suggestion__form h2{
+.complaint__form h2{
     text-align: center;
 }
-.suggestion__print{
+.complaint__print{
     width: 700%;
     height: fit-content;
     margin: auto;
