@@ -1,14 +1,43 @@
-.home{
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.content_home{
+    width: 98%;
+    min-height: 85vh;
     background-image: linear-gradient(0deg, #860e18da 10%, #36094075 60%);
-    width: 100%;
-    height:  85vh;
     z-index: 4;
-    border-radius: inherit;
+
+   
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.473);
+    margin-top: 1vh;
+    margin-right: 1vh;
+    display: flex;
+    flex-direction: row;
+     color: white;
+     scroll-behavior: auto;
+}
+
+
+.home{
+   
+    width: 55%;
+    height:  fit-content;
+    z-index: 4;
+    border-radius: 15px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 3rem 2rem;
+    margin: 5rem 2rem;
+
     
 }
 
 .home h1{
-    font-size: 5em;
+    font-size: 4em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
@@ -19,4 +48,60 @@
 .home p{
     font-size: 2em;
 
+}
+.right_slider{
+    width: 45%;
+    height:  85vh;
+    z-index: -4;
+    
+}
+
+.btnConnect{
+    padding: 0.5rem 0.7rem;
+    margin:  1rem 0.7rem;
+    font-size: large;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0px 0px 11px white;
+    border: none;
+    color: white;
+    background-image: linear-gradient(135deg, #c70a00a4 10%, #a40000 100%);
+}
+.btnConnect:hover{
+    padding: 0.5rem 0.7rem;
+    margin:  1rem 0.7rem;
+    font-size: large;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0px 0px 0px white;
+    border: 2px solid white;
+    color: white;
+    background-image: linear-gradient(135deg, #c70a0000 10%, #a4000000 100%);
+    background-color: transparent;
+}
+.btnPropos{
+    padding: 0.5rem 0.7rem;
+    margin:  1rem 0.7rem;
+    font-size: large;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 2px solid white;
+    color: white;
+    background-image: linear-gradient(135deg, #c70a0000 10%, #a4000000 100%);
+    background-color: transparent;
+}
+.btnPropos:hover{
+    padding: 0.5rem 0.7rem;
+    margin:  1rem 0.7rem;
+    font-size: large;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0px 0px 11px white;
+    border: none;
+    color: white;
+    background-image: linear-gradient(135deg, #c70a00a4 10%, #a40000 100%);
+}
+a{
+    text-decoration: none;
+    color: white;
 }
