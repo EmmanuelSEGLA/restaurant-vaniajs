@@ -1,0 +1,22 @@
+.home{
+    background-image: linear-gradient(0deg, #860e18da 10%, #36094075 60%);
+    width: 100%;
+    height:  85vh;
+    z-index: 4;
+    border-radius: inherit;
+    
+}
+
+.home h1{
+    font-size: 5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.home h2{
+    font-size: 7em;
+
+}
+.home p{
+    font-size: 2em;
+
+}

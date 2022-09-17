@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.content{
+
+    
+  
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+    animation: slide 80s infinite;
+    z-index: -5;
+    
+    
+}
+
+
+.load{
+    animation: slide 30s;
+}
+
+
+
+@keyframes slide {
+
+    0%{
+        background-image: url(../Assets/img/bgu1.png);
+    }
+    20%{
+        background-image: url(../Assets/img/bgu1.png);
+    }
+    20.01%{
+        background-image: url(../Assets/img/bgu2.png);
+    }
+    40%{
+        background-image: url(../Assets/img/bgu2.png);
+    }
+    40.01%{
+        background-image: url(../Assets/img/bgu3.png);
+    }
+    60%{
+        background-image: url(../Assets/img/bgu3.png);
+    }
+    60.01%{
+        background-image: url(../Assets/img/bgu4.png);
+    }
+    80%{
+        background-image: url(../Assets/img/bgu4.png);
+    }
+    80.01%{
+        background-image: url(../Assets/img/bgu5.png);
+    }
+    100%{
+        background-image: url(../Assets/img/bgu5.png);
+    }
+    
+
+
+
+}
