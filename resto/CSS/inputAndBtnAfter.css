@@ -49,6 +49,51 @@ input::placeholder{
     color: rgba(247, 247, 247, 0.856);
     text-align: center;
 }
+select{
+    color: #fff;
+    width: 100%;
+    min-height: 3.5vh;
+    font-size: large;
+    font-family:Arial, Helvetica, sans-serif;
+    border: 1px solid white;
+    border-bottom: 3px solid rgb(248, 180, 32);
+    border-bottom-left-radius: 3px ;
+    border-bottom-right-radius: 3px ;
+    border-top-right-radius: 3px ;
+    border-top-right-radius: 3px ;
+    border-radius: 4px;
+    text-align: center;
+
+
+    background: linear-gradient(135deg, rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    box-shadow: 0px 0px 15px  rgba(196, 195, 195, 0.37);
+    
+}
+select:focus{
+    color: black;
+    width: 100%;
+    min-height: 3.5vh;
+    font-size: large;
+    font-family:Arial, Helvetica, sans-serif;
+    border: none;
+    border-bottom: 3px solid orange;
+    border-bottom-left-radius: 3px ;
+    border-bottom-right-radius: 3px ;
+    border-top-right-radius: 3px ;
+    border-top-right-radius: 3px ;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.589);
+    text-align: center;
+
+    
+}
+select::placeholder{
+    color: rgba(247, 247, 247, 0.856);
+    text-align: center;
+}
 
 
 textarea{
@@ -279,6 +324,8 @@ textarea::placeholder{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
     box-shadow: 0px 0px 9px #fff;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
 }
 .formSubmit:hover{
     background-color: rgb(216, 82, 5);
@@ -290,4 +337,7 @@ textarea::placeholder{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
     box-shadow: 0px 0px 9px #fff;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
 }
+

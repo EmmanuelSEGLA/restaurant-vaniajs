@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/Assets/icons/css/all.min.css">
     <link rel="stylesheet" href="../CSS/generalLayout.css" />
-    <link rel="stylesheet" href="../CSS/inputAndBtn.css" />
+    <link rel="stylesheet" href="../CSS/inputAndBtnAfter.css" />
+    <link rel="stylesheet" href="../CSS/tableAfter.css" />
     <link rel="stylesheet" href="../CSS/client.css" />
     <title>Restaurant</title>
   </head>
@@ -46,6 +47,68 @@
         </header>
         <div class="content">
 
+
+          
+          <div class="client_form">
+            <h2>Formulaire d'enregistrement d'un Client</h2> <br>
+            <section class="btnPincipal" id="btnPincipal">
+              <button type="" id="btnPrintForm" class="btnOn">cliquer pour Ajouter un Client</button> <br> <br>
+          </section>
+
+            <form action="" id="pageForm" hidden>
+              <div class="full_name">
+                <input type="text" id="" placeholder="Nom" required>
+                <input type="text" id="" placeholder="Prenom" required>
+              </div>
+              <div class="adress">
+                <input type="text" id="" placeholder="Adresse de Domicile" required>
+              </div>
+              <div class="electronic_adress">
+                <input type="email"id="" placeholder="Email" required>
+                <input type="number" id="" placeholder="Téléphone" required>
+              </div>
+              <div class="date">
+                <input type="date" id="" placeholder="Date" required>
+              </div>
+
+
+              <button type="submit" class="formSubmit">Soumettre</button>
+
+            </form> 
+
+          </div> 
+
+
+
+          <div class="client_print">
+            <h2><u>Liste des Clients Fidèles</u></h2>
+
+            <section class="tab">
+              <div class="tableContent">
+
+
+                <table class="tab_employ" >
+                  <thead class="tab_employ_head">
+                      <tr>
+                          <th>Nom</th>
+                          <th>Prenom</th>
+                          <th>Adresse</th>
+                          <th>Email</th>
+                          <th>Téléphone</th>
+                          <th>Ajouté le</th>
+                          <th>Options</th>
+                      </tr>
+                  </thead>
+                  <tbody id="tab_employ_body" class="tab_employ_body"></tbody>
+              </table>
+
+              
+              </div>
+            </section>
+
+          </div>
+
+
         </div>
       </div>
     </main>
@@ -54,5 +117,6 @@
 
 
     <script src="../JS/client.js"></script>
+    <script src="../JS/btnBehavior.js"></script>
   </body>
 </html>
